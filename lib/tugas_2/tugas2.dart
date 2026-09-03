@@ -55,11 +55,7 @@ class Tugas2 extends StatelessWidget {
               ),
               child: const Row(
                 children: [
-                  Icon(
-                    Icons.email, // Ikon amplop
-                    color: Colors.black,
-                    size: 20,
-                  ),
+                  Icon(Icons.email, color: Colors.black, size: 20),
                   SizedBox(width: 12), // Jarak antara ikon dan teks
                   Text(
                     'harumony.id',
@@ -75,20 +71,59 @@ class Tugas2 extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(
                 left: 0,
-                top: 20,
+                top: 10,
                 right: 0,
                 bottom: 20,
               ),
               padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 12),
               child: const Row(
                 children: [
-                  Icon(Icons.phone),
+                  Icon(Icons.phone, size: 13),
                   SizedBox(width: 5),
-                  Text('083841111864'),
+                  Text('083841111864', style: TextStyle(fontSize: 12)),
                   Spacer(),
                   Icon(Icons.location_on),
                   SizedBox(width: 1),
-                  Text('Jakarta, Indonesia'),
+                  Text('Jakarta, Indonesia', style: TextStyle(fontSize: 12)),
+                ],
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.only(
+                left: 0,
+                top: 0,
+                right: 0,
+                bottom: 20,
+              ),
+              padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+              child: const Row(
+                children: [
+                  Column(
+                    children: [
+                      Text('300+', style: TextStyle(fontSize: 20)),
+                      SizedBox(width: 10),
+                      Text(
+                        'books sold per month',
+                        style: TextStyle(fontSize: 10),
+                      ),
+                    ],
+                  ),
+                  Spacer(),
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text('4.8/5', style: TextStyle(fontSize: 20)),
+                          Icon(
+                            Icons.star,
+                            color: Color.fromRGBO(255, 233, 34, 0.965),
+                          ),
+                        ],
+                      ),
+                      SizedBox(width: 10),
+                      Text('rating by user', style: TextStyle(fontSize: 10)),
+                    ],
+                  ),
                 ],
               ),
             ),
