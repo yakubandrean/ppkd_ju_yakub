@@ -42,7 +42,7 @@ class Tugas2 extends StatelessWidget {
                 left: 5,
                 top: 25,
                 right: 5,
-                bottom: 20,
+                bottom: 10,
               ),
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               decoration: BoxDecoration(
@@ -73,7 +73,7 @@ class Tugas2 extends StatelessWidget {
                 left: 0,
                 top: 10,
                 right: 0,
-                bottom: 20,
+                bottom: 10,
               ),
               padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 12),
               child: const Row(
@@ -88,45 +88,96 @@ class Tugas2 extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              margin: const EdgeInsets.only(
-                left: 0,
-                top: 0,
-                right: 0,
-                bottom: 20,
-              ),
-              padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-              decoration: BoxDecoration(
-                color: Color.fromARGB(107, 134, 136, 255),
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: const Row(
+            Padding(
+              padding: const EdgeInsets.only(bottom: 20),
+              child: Row(
                 children: [
-                  Column(
-                    children: [
-                      Text('300+', style: TextStyle(fontSize: 20)),
-                      SizedBox(width: 10),
-                      Text(
-                        'books sold per month',
-                        style: TextStyle(fontSize: 10),
+                  // Card kiri: 300+ books sold
+                  Expanded(
+                    child: Container(
+                      margin: const EdgeInsets.only(right: 6),
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 12,
+                        horizontal: 8,
                       ),
-                    ],
-                  ),
-                  Spacer(),
-                  Column(
-                    children: [
-                      Row(
-                        children: [
-                          Text('4.8/5', style: TextStyle(fontSize: 20)),
-                          Icon(
-                            Icons.star,
-                            color: Color.fromRGBO(255, 233, 34, 0.965),
+                      decoration: BoxDecoration(
+                        color: const Color.fromARGB(107, 134, 136, 255),
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: const Color.fromARGB(107, 134, 136, 255),
+                          width: 1,
+                        ),
+                      ),
+                      child: Column(
+                        children: const [
+                          Text(
+                            '300+',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(height: 6),
+                          Text(
+                            'books sold per month',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 11,
+                              color: Colors.black54,
+                            ),
                           ),
                         ],
                       ),
-                      SizedBox(width: 10),
-                      Text('rating by user', style: TextStyle(fontSize: 10)),
-                    ],
+                    ),
+                  ),
+                  // Card kanan: rating
+                  Expanded(
+                    child: Container(
+                      margin: const EdgeInsets.only(left: 6),
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 12,
+                        horizontal: 8,
+                      ),
+                      decoration: BoxDecoration(
+                        color: const Color.fromARGB(107, 134, 136, 255),
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: const Color.fromARGB(107, 134, 136, 255),
+                          width: 1,
+                        ),
+                      ),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Text(
+                                '4.8 / 5',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(width: 4),
+                              Icon(
+                                Icons.star,
+                                color: Color.fromRGBO(255, 210, 60, 1),
+                                size: 18,
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 6),
+                          const Text(
+                            'rating by user',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 11,
+                              color: Colors.black54,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),
