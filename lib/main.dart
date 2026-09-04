@@ -6,6 +6,7 @@ import 'package:yakub_ppkd_app_dev/latihan_widget/latihan_richtext.dart';
 import 'package:yakub_ppkd_app_dev/latihan_widget/latihan_row.dart';
 import 'package:yakub_ppkd_app_dev/latihan_widget/latihan_scaffold.dart';
 import 'package:yakub_ppkd_app_dev/tugas_2/tugas2.dart';
+import 'package:yakub_ppkd_app_dev/tugas_3dan4/tugas3.dart';
 import 'package:yakub_ppkd_app_dev/tugas_flutter/tugas_layouting.dart';
 import 'package:yakub_ppkd_app_dev/tugas_flutter/tugas_yakub_andrean.dart';
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Tugas2(),
+      home: const Tugas3(),
     );
   }
 }

@@ -206,7 +206,7 @@ class Tugas2 extends StatelessWidget {
               child: Image.asset(
                 'assets/images/harumonylogo.jpg',
                 height: 200,
-                fit: BoxFit.cover,
+                fit: BoxFit.contain,
               ),
             ),
           ],
