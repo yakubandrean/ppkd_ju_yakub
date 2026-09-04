@@ -96,6 +96,10 @@ class Tugas2 extends StatelessWidget {
                 bottom: 20,
               ),
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+              decoration: BoxDecoration(
+                color: Color.fromARGB(107, 134, 136, 255),
+                borderRadius: BorderRadius.circular(20),
+              ),
               child: const Row(
                 children: [
                   Column(
@@ -125,6 +129,33 @@ class Tugas2 extends StatelessWidget {
                     ],
                   ),
                 ],
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.only(
+                left: 0,
+                top: 0,
+                right: 0,
+                bottom: 20,
+              ),
+              padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+              child: Text(
+                'Harumony Mystic Emporium adalah toko buku  bernuansa magis yang menghadirkan koleksi novel fantasi, buku misteri, misteri, spiritualitas, hingga literatur klasik dalam suasana hangat dan estetik. Dengan sentuhan tema celestia dan enchanted, toko ini dirancang sebagai tempat nyaman bagi para pecinta buku untuk menjelajahi dunia imajinasi pengetahuan, dan kisah penuh keajaiban. Selain buku, Harumony Mystic Emporium juga menawarkan berbagai aksesori dan dekorasi bertema mystic yang menambah pengalaman membaca terasa lebih unik dan nikmat.',
+                textAlign: TextAlign.justify,
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              height: 200, // sesuaikan tinggi
+              padding: const EdgeInsets.symmetric(vertical: 20),
+              decoration: BoxDecoration(
+                color: Color.fromARGB(107, 134, 136, 255),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Image.asset(
+                'assets/images/harumonylogo.jpg',
+                height: 200,
+                fit: BoxFit.cover,
               ),
             ),
           ],
