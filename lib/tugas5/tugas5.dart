@@ -102,20 +102,20 @@ class _Tugas5State extends State<Tugas5> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // ================= 1. ELEVATED BUTTON =================
-            const _SectionLabel(text: 'Ini tentang ElevatedButton:'),
+            Center(child: const Text('Ini tentang ElevatedButton')),
             const SizedBox(height: 8),
-            Center(
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 24,
-                    vertical: 12,
+              Center(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 24,
+                      vertical: 12,
+                    ),
                   ),
+                  onPressed: _toggleSecretText,
+                  child: const Text('Klik Saya!'),
                 ),
-                onPressed: _toggleSecretText,
-                child: const Text('Klik Saya!'),
               ),
-            ),
             const SizedBox(height: 8),
             if (_isSecretVisible)
               const Center(
