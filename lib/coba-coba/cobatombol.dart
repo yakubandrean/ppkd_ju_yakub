@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-class MyWidget extends StatefulWidget {
-  const new({super.key});
 
-  @override
-  State<MyWidget> createState() => _MyWidgetState();
+class Produk {
+  
 }
 
-class _MyWidgetState extends State<MyWidget> {
+
+class Cobatombol extends StatefulWidget {
+  const Cobatombol({Key? key}) : super(key: key);
+
+  @override
+  _CobatombolState createState() => _CobatombolState();
+}
+
+class _CobatombolState extends State<Cobatombol> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
-    );
+    return Scaffold();
   }
 }
