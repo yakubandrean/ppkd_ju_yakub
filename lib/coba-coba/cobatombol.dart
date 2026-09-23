@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-class Produk {
-  
-}
-
 
 class Cobatombol extends StatefulWidget {
   const Cobatombol({Key? key}) : super(key: key);
@@ -15,6 +11,10 @@ class Cobatombol extends StatefulWidget {
 class _CobatombolState extends State<Cobatombol> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        leading: MenuItemButton(),
+      ),
+    );
   }
 }
